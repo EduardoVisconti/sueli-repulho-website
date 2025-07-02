@@ -1,0 +1,97 @@
+.social-section {
+  background-color: #44023d;
+  border-radius: 20px;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.social-bubble {
+  background-color: #e7dfff;
+  border-radius: 20px;
+  padding: 16px;
+  color: #44023d;
+  font-size: 0.95rem;
+  max-width: 300px;
+  margin: 0 auto 30px;
+  font-weight: 500;
+}
+
+.social-photo {
+  width: 260px;
+  border-radius: 20px;
+  transform: rotate(-4deg);
+  box-shadow: -8px 12px 20px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 25px;
+  display: block;
+  object-fit: cover;
+  border: 2px solid #ffa500;
+}
+
+.social-tilted {
+  transform: rotate(-5deg);
+  font-size: 1rem;
+  max-width: 250px;
+  margin: 0 auto 35px;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social-btn {
+  display: inline-block;
+  background-color: #ffa500;
+  color: white;
+  font-weight: bold;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Remove cor azul e sublinhado */
+.social-btn:hover,
+.social-btn:focus,
+.social-btn:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover com leve zoom */
+.social-btn:hover {
+  background-color: #e69500;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .social-photo {
+    width: 300px;
+  }
+
+  .social-bubble {
+    font-size: 1rem;
+  }
+
+  .social-tilted {
+    font-size: 1.05rem;
+    max-width: 280px;
+  }
+
+  .social-buttons {
+    gap: 20px;
+  }
+}

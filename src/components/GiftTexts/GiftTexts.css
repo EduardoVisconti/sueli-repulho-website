@@ -1,0 +1,83 @@
+.gift-texts-section {
+  background-image: url('/assets/bg/bg-presente.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  border-radius: 20px;
+  color: white;
+  position: relative;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.gift-texts-overlay {
+  background: rgba(0, 0, 0, 0.5); /* leve escurecimento p/ legibilidade */
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.gift-texts-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.gift-texts-subtitle {
+  font-size: 1.2rem;
+  color: #ffa500;
+  margin-bottom: 20px;
+}
+
+.gift-texts-intro {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.gift-texts-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.gift-texts-list li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.gift-texts-btn {
+  display: inline-block;
+  background-color: #ffa500;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Remove comportamento padrão de link */
+.gift-texts-btn:hover,
+.gift-texts-btn:focus,
+.gift-texts-btn:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover com efeito leve */
+.gift-texts-btn:hover {
+  background-color: #e69500;
+  transform: scale(1.03);
+}
+.gift-texts-btn:active {
+  background-color: #cc8400;
+  transform: scale(0.98);
+}

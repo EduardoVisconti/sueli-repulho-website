@@ -1,0 +1,105 @@
+.ebook-section {
+  background-color: #44023d;
+  border-radius: 20px;
+  padding: 30px 20px;
+  color: white;
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  gap: 20px;
+}
+
+.ebook-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.ebook-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.ebook-card {
+  background-color: #655c39;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.ebook-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.ebook-card h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ebook-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.ebook-btn {
+  display: inline-block;
+  background-color: #ffa500;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ebook-btn:hover,
+.ebook-btn:focus,
+.ebook-btn:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.ebook-btn:hover {
+  background-color: #e69500;
+  transform: scale(1.03);
+}
+
+.ebook-btn:active {
+  background-color: #d68c00;
+  transform: scale(0.98);
+}
+
+.ebook-footer {
+  font-style: italic;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 20px;
+  color: #ddd;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .ebook-cards {
+    flex-direction: row;
+  }
+
+  .ebook-btn {
+    width: auto;
+  }
+}

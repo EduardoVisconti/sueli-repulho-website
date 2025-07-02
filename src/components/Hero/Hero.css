@@ -1,0 +1,66 @@
+.hero {
+  background-color: #50004e;
+  padding: 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.hero-left {
+  text-align: center;
+}
+
+.sueli-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.hero-left h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.hero-left p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ambiente-img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  /* recorte inclinado */
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.hero-missao {
+  text-align: center;
+}
+
+.hero-missao h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-missao p {
+  font-size: 1rem;
+  color: #eee;
+  line-height: 1.5;
+}

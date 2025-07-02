@@ -1,0 +1,98 @@
+.gift-section {
+  background-color: #44023d; /* Fundo roxo principal */
+  border-radius: 20px;
+  padding: 30px 20px;
+  color: white;
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* permite quebrar linha no mobile */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* evita estouro visual */
+  font-family: 'Poppins', sans-serif;
+}
+
+.gift-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gift-subtitle {
+  color: #ffa500;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.gift-message {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f9eecf;
+}
+
+.gift-cta {
+  position: absolute;
+  bottom: 110px; /* ajusta conforme quiser subir/descer */
+  right: 20px; /* ou left: 20px se quiser mudar o lado */
+  transform: rotate(-6deg); /* só gira, sem mexer em largura */
+  
+  color: #ffa500;
+  font-size: 1.05rem;
+  font-weight: 500;
+  max-width: 250px;
+  text-align: center;
+  z-index: 2;
+}
+
+.gift-cta strong {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.gift-you-deserve {
+  font-size: 1.6rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.gift-img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gift-right {
+  max-width: 100%;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+  .gift-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .gift-content {
+    flex: 1;
+  }
+
+  .gift-img {
+    flex: 1;
+    max-width: 100%;
+  }
+}

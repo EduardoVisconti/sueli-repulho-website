@@ -1,0 +1,61 @@
+.about-section {
+  background-color: #f5e7c5;
+  border-radius: 15px;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+  color: #44023d;
+}
+
+.about-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 140px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.about-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.about-content {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.about-highlight {
+  font-style: italic;
+  color: #6d1d63;
+  font-size: 0.95rem;
+}
+
+.about-highlight strong {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    text-align: left;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-photo {
+    width: 180px;
+  }
+}
