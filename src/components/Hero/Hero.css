@@ -14,17 +14,26 @@
 }
 
 .hero-left {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sueli-photo-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* isso impede que a imagem ultrapasse a borda */
 }
 
 .sueli-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border: 3px solid white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 1rem;
+  object-position: 40% 50%;
+  transform: scale(1.1); /* aplica zoom só na imagem */
 }
 
 .hero-left h2 {

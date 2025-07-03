@@ -6,7 +6,9 @@ function HeroSection() {
     <section className="hero">
       <div className="hero-top">
         <div className="hero-left">
-          <img src="/assets/fotos-sueli/sueli-hero.png" alt="Sueli Repulho" className="sueli-photo" />
+          <div className="sueli-photo-wrapper">
+            <img src="/assets/fotos-sueli/sueli-hero.png" alt="Sueli Repulho" className="sueli-photo" />
+          </div>
           <h2>Transformando ações em resultado - sem se anular no processo</h2>
           <p>Sim. É possível viver a vida que deseja.</p>
         </div>
