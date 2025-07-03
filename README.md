@@ -6,6 +6,7 @@ This is the official website for Sueli Repulho, an emotional transformation ment
 
 🔧 **In Development**  
 ✅ Mobile version completed  
+✅ Tablet version completed  
 🚧 Desktop version and enhancements coming soon
 
 ## 📱 Mobile-First Focus
