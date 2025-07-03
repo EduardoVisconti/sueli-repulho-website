@@ -47,6 +47,9 @@
 }
 
 @media (min-width: 768px) {
+  .about-header {
+    gap: 40px; /* aumenta o espaço entre a foto e o título */
+  }
   .about-content {
     text-align: left;
   }
@@ -57,5 +60,19 @@
 
   .about-photo {
     width: 180px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-content {
+    max-width: 900px; /* limita largura do texto */
+    margin: 0 auto; /* centraliza horizontalmente */
+    padding: 0 10px; /* adiciona um leve respiro */
+  }
+
+  .about-highlight {
+    text-align: center; /* centraliza a frase final */
+    display: block;
+    margin-top: 20px;
   }
 }

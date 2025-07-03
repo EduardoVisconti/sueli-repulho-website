@@ -1,7 +1,7 @@
 .gift-section {
   background-color: #44023d; /* Fundo roxo principal */
   border-radius: 20px;
-  padding: 30px 20px;
+  padding: 5px 20px;
   color: white;
   max-width: 1000px;
   margin: 40px auto;
@@ -13,6 +13,15 @@
   align-items: center;
   overflow: hidden; /* evita estouro visual */
   font-family: 'Poppins', sans-serif;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.gift-section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .gift-title {
@@ -37,8 +46,7 @@
 .gift-cta {
   position: absolute;
   bottom: 110px; /* ajusta conforme quiser subir/descer */
-  right: 20px; /* ou left: 20px se quiser mudar o lado */
-  transform: rotate(-6deg); /* só gira, sem mexer em largura */
+  right: 10px; /* ou left: 20px se quiser mudar o lado */
 
   color: #ffa500;
   font-size: 1.05rem;
@@ -46,6 +54,7 @@
   max-width: 250px;
   text-align: center;
   z-index: 2;
+  animation: pulseUp 2.5s ease-in-out infinite;
 }
 
 .gift-cta strong {
@@ -67,6 +76,9 @@
   border-radius: 20px;
   display: block;
   margin: 0 auto;
+  transform: scale(1.2);
+    transform-origin: center 70%;
+
 }
 
 .gift-right {
@@ -78,16 +90,17 @@
   position: relative;
 }
 
-/* Tablet (entre 768px e 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* Tablet */
+@media (min-width: 768px) {
   .gift-section {
     position: relative; /* importante para alinhar conteúdo sobreposto */
     overflow: hidden;
-    padding: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 0px; /* antes estava 20px */
+    padding: 15px 20px 0px;
   }
 
   .gift-left {
@@ -127,8 +140,8 @@
     max-width: 600px;
     width: 100%;
     height: auto;
-    transform: scale(1.9);
-    transform-origin: center;
+    transform: scale(2.6);
+    transform-origin: center 70%;
     z-index: 1;
     position: relative;
   }
@@ -138,6 +151,26 @@
     right: 45px;
     font-size: 1.5rem;
     max-width: 280px;
-    transform: rotate(6deg); /* só gira, sem mexer em largura */
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseUp {
+  0%,
+  100% {
+    transform: rotate(6deg) scale(1);
+  }
+  50% {
+    transform: rotate(8deg) scale(1.05);
   }
 }

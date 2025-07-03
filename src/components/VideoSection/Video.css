@@ -21,3 +21,9 @@
   height: 100%;
   border: none;
 }
+
+@media (min-width: 1024px) {
+  .video-section {
+    max-width: 800px; /* largura maior em telas maiores */
+  }
+}
