@@ -39,7 +39,7 @@
   bottom: 110px; /* ajusta conforme quiser subir/descer */
   right: 20px; /* ou left: 20px se quiser mudar o lado */
   transform: rotate(-6deg); /* só gira, sem mexer em largura */
-  
+
   color: #ffa500;
   font-size: 1.05rem;
   font-weight: 500;
@@ -78,21 +78,66 @@
   position: relative;
 }
 
-/* Responsivo */
-@media (min-width: 768px) {
+/* Tablet (entre 768px e 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .gift-section {
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative; /* importante para alinhar conteúdo sobreposto */
+    overflow: hidden;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 40px;
+    flex-direction: column;
   }
 
-  .gift-content {
-    flex: 1;
+  .gift-left {
+    position: relative;
+    z-index: 3;
+  }
+
+  .gift-right {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .gift-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .gift-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .gift-message {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .gift-you-deserve {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .gift-img {
-    flex: 1;
-    max-width: 100%;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    transform: scale(1.9);
+    transform-origin: center;
+    z-index: 1;
+    position: relative;
+  }
+
+  .gift-cta {
+    bottom: 120px;
+    right: 45px;
+    font-size: 1.5rem;
+    max-width: 280px;
+    transform: rotate(6deg); /* só gira, sem mexer em largura */
   }
 }

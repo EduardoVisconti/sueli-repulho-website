@@ -1,9 +1,9 @@
 .mentoria-section {
-  background-color: #44023d; /* corrigido */
+  background-color: #44023d;
   padding: 40px 20px;
   border-radius: 20px;
   margin: 40px auto;
-  color: #f9eecf; /* texto claro */
+  color: #f9eecf;
   font-family: 'Poppins', sans-serif;
   max-width: 1000px;
   display: flex;
@@ -11,17 +11,26 @@
   gap: 30px;
 }
 
+.mentoria-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.mentoria-top-text {
+  text-align: center;
+}
+
 .mentoria-title {
   font-size: 2rem;
   font-weight: 900;
-  text-align: center;
   color: #f9eecf;
 }
 
 .mentoria-subtitle {
   font-size: 1.1rem;
   font-weight: 500;
-  text-align: center;
   line-height: 1.5;
   color: #f9eecf;
 }
@@ -30,13 +39,6 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-.mentoria-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
 }
 
 .mentoria-img {
@@ -58,6 +60,10 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.mentoria-box h3 {
+  margin-bottom: 2px;
 }
 
 .mentoria-btn {
@@ -96,17 +102,46 @@
 
 /* Responsivo */
 @media (min-width: 768px) {
-  .mentoria-content {
+  .mentoria-top {
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     gap: 40px;
   }
 
-  .mentoria-left {
-    flex: 1;
+  .mentoria-top-text {
+    max-width: 500px;
+    text-align: left;
   }
 
-  .mentoria-group {
+  .mentoria-img {
+    max-width: 250px;
+  }
+
+  .mentoria-content {
+    flex-direction: row;
+    gap: 40px;
+    align-items: stretch;
+    margin-top: 40px;
+  }
+
+  .mentoria-box {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mentoria-content-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .mentoria-content-wrapper p {
+    margin-bottom: 0px;
+    line-height: 1.4;
   }
 
   .mentoria-btn {

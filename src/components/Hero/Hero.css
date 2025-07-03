@@ -7,6 +7,12 @@
   box-sizing: border-box;
 }
 
+.hero-top {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .hero-left {
   text-align: center;
 }
@@ -63,4 +69,45 @@
   font-size: 1rem;
   color: #eee;
   line-height: 1.5;
+}
+
+/* Tablet/Desktop */
+@media (min-width: 768px) {
+
+  .hero-top {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: left;
+  }
+
+  .hero-left {
+    flex: 0.6;
+    text-align: left;
+  }
+
+  .hero-right {
+    flex: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sueli-photo {
+    width: 200px;
+  }
+
+  .ambiente-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-missao {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    text-align: center;
+    margin-inline: auto;
+    max-width: 700px;
+  }
 }

@@ -4,14 +4,16 @@ import './Hero.css'
 function HeroSection() {
   return (
     <section className="hero">
-      <div className="hero-left">
-        <img src="/assets/fotos-sueli/sueli-hero.png" alt="Sueli Repulho" className="sueli-photo" />
-        <h2>Transformando ações em resultado - sem se anular no processo</h2>
-        <p>Sim. É possível viver a vida que deseja.</p>
-      </div>
+      <div className="hero-top">
+        <div className="hero-left">
+          <img src="/assets/fotos-sueli/sueli-hero.png" alt="Sueli Repulho" className="sueli-photo" />
+          <h2>Transformando ações em resultado - sem se anular no processo</h2>
+          <p>Sim. É possível viver a vida que deseja.</p>
+        </div>
 
-      <div className="hero-right">
-        <img src="/assets/fotos-sueli/quadros-img.png" alt="Ambiente Sueli" className="ambiente-img" />
+        <div className="hero-right">
+          <img src="/assets/fotos-sueli/quadros-img.png" alt="Ambiente Sueli" className="ambiente-img" />
+        </div>
       </div>
 
       <div className="hero-missao">
@@ -23,6 +25,7 @@ function HeroSection() {
         </p>
       </div>
     </section>
+
   )
 }
 
