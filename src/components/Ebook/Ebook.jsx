@@ -33,7 +33,7 @@ const EbookSection = () => {
               Método criado por Sueli Repulho para limpar os bloqueios emocionais, criar liberdade e direção. RAJA te ajuda a destravar sua vida pessoal e profissional com firmeza e clareza.
             </p>
           </div>
-          <a href="https://mentoria.suelirepulho.com.br/processoraja/" target="_blank" rel="noopener noreferrer" className="ebook-btn">Adquirir Ebook</a>
+          <a href="https://mentoria.suelirepulho.com.br/processoraja/" target="_blank" rel="noopener noreferrer" className="ebook-btn">Entrar Agora</a>
         </div>
       </div>
 
