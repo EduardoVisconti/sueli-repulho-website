@@ -1,5 +1,6 @@
 import React from 'react'
 import './Mentorship.css'
+import { Link } from 'react-router-dom'
 
 const MentoriaSection = () => {
   return (
@@ -20,6 +21,16 @@ const MentoriaSection = () => {
       </p>
     </div>
   </div>
+
+  <div className="online-therapy">
+    <Link
+      to="/online-therapy"
+      className="mentoria-btn online-therapy-btn"
+    >
+      Terapia Online
+    </Link>
+  </div>
+
 
   <div className="mentoria-content">
     <div className="mentoria-box">
